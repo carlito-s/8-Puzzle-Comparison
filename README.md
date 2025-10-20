@@ -56,7 +56,7 @@ Los algoritmos se comparan en base a:
 
 1. Clona el repositorio:
 ```bash
-git clone [URL_del_repositorio]
+git clone https://github.com/carlito-s/8-Puzzle-Comparison
 cd 8-puzzle-comparison
 ```
 
