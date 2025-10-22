@@ -28,7 +28,7 @@ def astar(problem: EightPuzzle, heuristic_fn=None):
     g_score: Dict[tuple,int] = {start: 0}
     f0 = heuristic_fn(start)
     heappush(open_heap, (f0, 0, start))
-    came_from: Dict[tuple, tuple] = {} # {estadoA: estadoP}
+    came_from: Dict[tuple, tuple] = {}
     closed = set()
 
     nodes_expanded = 0
