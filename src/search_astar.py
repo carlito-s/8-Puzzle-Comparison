@@ -24,7 +24,7 @@ def astar(problem: EightPuzzle, heuristic_fn=None):
         heuristic_fn = lambda s: h_manhattan(s, goal_pos)
 
     t0 = time.time()
-    open_heap = [] #Contiene los nodos pendientes por explorar
+    open_heap = [] # Contiene los nodos pendientes por explorar
     g_score: Dict[tuple,int] = {start: 0}
     f0 = heuristic_fn(start)
     heappush(open_heap, (f0, 0, start))
