@@ -53,8 +53,8 @@ def ida_star(problem: EightPuzzle, heuristic_fn=None, max_threshold=10**6):
                 return 'FOUND'
             if res < min_over:
                 min_over = res
-            path.pop()
             stats.max_depth = max(stats.max_depth, len(path))
+            path.pop()    
         return min_over
 
     while True:
