@@ -30,7 +30,7 @@ def ida_star(problem: EightPuzzle, heuristic_fn=None, max_threshold=10**6):
         heuristic_fn = lambda s: h_manhattan(s, goal_pos)
 
     t0 = time.time()
-    bound = heuristic_fn(start)
+    bound = heuristic_fn(start) # umbral actual de f = g + h
     path = [start]
     stats = IDAStats()
 
